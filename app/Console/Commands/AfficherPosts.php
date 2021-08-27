@@ -40,7 +40,7 @@ class AfficherPosts extends Command
     public function handle()
     {
         $choixTag = $this->ask('Choissisez un Tag ?');
-
+        //
         //récupération des posts possédant ce tag
         $idTag = Post::Tag($choixTag)->get()->toArray();
         
