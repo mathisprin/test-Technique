@@ -21,8 +21,5 @@ class Tag extends Model
         return $this->hasMany(Post::class);
     }
 
-    public function scopeTag($query, $idTag)
-    {
-        return $query->where('tag_idTag', $idTag);
-    }
+    
 }
